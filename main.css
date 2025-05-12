@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #f8e4c1;
+}
+
+
+.container {
+    max-width: 64rem;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: .625rem;
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 1rem 0 0;
+    border-bottom: 1px solid #ccc ;
+    margin-bottom: 3.5rem;
+    background-color: #2e0d23;
+}
+
+h1, li {
+    color: #f7803c;
+}
+
+.menu li {
+    float: left;
+    list-style: none;
+    padding: 1rem;
+    border-top: .25rem solid transparent;
+    position: relative;
+}
+
+.clear {
+    clear: both;
+}
+
+.conteudo {
+    display: grid;
+}
+
+.sobre {
+    display: flex;
+    padding: 1.875rem;
+    margin-bottom: 4.375rem;
+}
+.sobre img {
+    width: 60%;
+}
+
+h2 {
+    padding: 10px;
+    border-bottom: 1px solid #2e0d23;
+    color: #f7803c;
+}
+
+article h3 {
+    padding: 10px;
+    color: #2e0d23;
+    font-style: normal;
+    font-size:medium ;
+}
+
+.texto-sobre {
+    padding-left: 1.25rem;
+}
+
+.produto img {
+    width: 100%;
+
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 23.25%);
+    column-gap: 2.3%;
+    row-gap: 5%;
+
+}
+
+h4{
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.produto {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    background-color:#f54828 ;
+    border: none;
+    border-radius: 10px;
+    padding: 14px;
+    color: #ffedbf;
+    align-items: center;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .conteudo{
+        display: block;
+    }
+    .container {
+        max-width: 90%;
+    }
+    .sobre{
+        display: block;
+    }
+
+    .texto-sobre {
+        padding-left: 0%;
+    }
+
+    .sobre img {
+        width: 100%;
+    }
+    
+    header div.container {
+        flex-direction: column;
+    }        
+
+    .produtos {
+        display: block;
+    }
+
+    .produto .produtos{
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+    .container {
+        max-width: 90%;
+    }
+
+
+}
