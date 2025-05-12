@@ -154,5 +154,15 @@ button {
         max-width: 90%;
     }
 
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 48.25%);
+        column-gap: 4%;
+        row-gap: 2%;
+    
+    }
 
+    button {
+        margin-bottom: 10px;
+    }
 }
